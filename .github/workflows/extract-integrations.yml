@@ -1,0 +1,19 @@
+name: Extract integrations
+
+# A GitHub App installed on this repository and subscribed to Workflow run
+# receives one workflow_run delivery when this run is requested and another
+# when it completes. The job only has to finish successfully.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  wake:
+    name: Wake integration extract
+    runs-on: ubuntu-latest
+    steps:
+      - name: Finish so the App receives workflow_run
+        run: echo "workflow_run completed for the integration extract"
