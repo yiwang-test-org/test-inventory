@@ -1,0 +1,3 @@
+repository,commit,file,package,declared,locked
+yiwang-test-org/test,d364218c9e39ec036a5292d778427c94e22d9867,dependencies/pipenv-drift/Pipfile,httpx,~=0.29.0,0.28.1
+yiwang-test-org/test,d364218c9e39ec036a5292d778427c94e22d9867,dependencies/pipenv-drift/Pipfile,ruff,==0.14.0,missing
